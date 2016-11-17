@@ -15,6 +15,8 @@
 		26F72DCD1DDD52A400F92759 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F72DCB1DDD52A400F92759 /* LaunchScreen.storyboard */; };
 		26F72DD81DDD52A400F92759 /* BasicAnimatinDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F72DD71DDD52A400F92759 /* BasicAnimatinDemoTests.m */; };
 		26F72DE31DDD52A400F92759 /* BasicAnimatinDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F72DE21DDD52A400F92759 /* BasicAnimatinDemoUITests.m */; };
+		26F72DF61DDD534400F92759 /* CectLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F72DF51DDD534400F92759 /* CectLayer.m */; };
+		26F72DF91DDD597B00F92759 /* WaveLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F72DF81DDD597B00F92759 /* WaveLayer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		26F72DDE1DDD52A400F92759 /* BasicAnimatinDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicAnimatinDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26F72DE21DDD52A400F92759 /* BasicAnimatinDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicAnimatinDemoUITests.m; sourceTree = "<group>"; };
 		26F72DE41DDD52A400F92759 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26F72DF41DDD534400F92759 /* CectLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CectLayer.h; sourceTree = "<group>"; };
+		26F72DF51DDD534400F92759 /* CectLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CectLayer.m; sourceTree = "<group>"; };
+		26F72DF71DDD597B00F92759 /* WaveLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WaveLayer.h; sourceTree = "<group>"; };
+		26F72DF81DDD597B00F92759 /* WaveLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WaveLayer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +107,8 @@
 		26F72DBC1DDD52A400F92759 /* BasicAnimatinDemo */ = {
 			isa = PBXGroup;
 			children = (
-				26F72DC01DDD52A400F92759 /* AppDelegate.h */,
-				26F72DC11DDD52A400F92759 /* AppDelegate.m */,
-				26F72DC31DDD52A400F92759 /* ViewController.h */,
-				26F72DC41DDD52A400F92759 /* ViewController.m */,
-				26F72DC61DDD52A400F92759 /* Main.storyboard */,
-				26F72DC91DDD52A400F92759 /* Assets.xcassets */,
-				26F72DCB1DDD52A400F92759 /* LaunchScreen.storyboard */,
-				26F72DCE1DDD52A400F92759 /* Info.plist */,
+				26F72DF11DDD52BE00F92759 /* SystemFile */,
+				26F72DF01DDD52AF00F92759 /* Controller */,
 				26F72DBD1DDD52A400F92759 /* Supporting Files */,
 			);
 			path = BasicAnimatinDemo;
@@ -138,6 +138,48 @@
 				26F72DE41DDD52A400F92759 /* Info.plist */,
 			);
 			path = BasicAnimatinDemoUITests;
+			sourceTree = "<group>";
+		};
+		26F72DF01DDD52AF00F92759 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				26F72DF21DDD530200F92759 /* Controller */,
+				26F72DF31DDD530A00F92759 /* View */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		26F72DF11DDD52BE00F92759 /* SystemFile */ = {
+			isa = PBXGroup;
+			children = (
+				26F72DC61DDD52A400F92759 /* Main.storyboard */,
+				26F72DC91DDD52A400F92759 /* Assets.xcassets */,
+				26F72DCB1DDD52A400F92759 /* LaunchScreen.storyboard */,
+				26F72DCE1DDD52A400F92759 /* Info.plist */,
+			);
+			name = SystemFile;
+			sourceTree = "<group>";
+		};
+		26F72DF21DDD530200F92759 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				26F72DC01DDD52A400F92759 /* AppDelegate.h */,
+				26F72DC11DDD52A400F92759 /* AppDelegate.m */,
+				26F72DC31DDD52A400F92759 /* ViewController.h */,
+				26F72DC41DDD52A400F92759 /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		26F72DF31DDD530A00F92759 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26F72DF41DDD534400F92759 /* CectLayer.h */,
+				26F72DF51DDD534400F92759 /* CectLayer.m */,
+				26F72DF71DDD597B00F92759 /* WaveLayer.h */,
+				26F72DF81DDD597B00F92759 /* WaveLayer.m */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,7 +320,9 @@
 			files = (
 				26F72DC51DDD52A400F92759 /* ViewController.m in Sources */,
 				26F72DC21DDD52A400F92759 /* AppDelegate.m in Sources */,
+				26F72DF61DDD534400F92759 /* CectLayer.m in Sources */,
 				26F72DBF1DDD52A400F92759 /* main.m in Sources */,
+				26F72DF91DDD597B00F92759 /* WaveLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
